@@ -11,4 +11,4 @@ Exploring application creation with Streamlit and SQLite. The data is from FiveT
 - [Plotly](https://pypi.org/project/plotly/)
 
 ## How to Run
-Any Streamlit app can be run locally via CLI `streamlit run app.py` or deployed via [other methods](https://discuss.streamlit.io/t/streamlit-deployment-guide-wiki/5099)
+Any Streamlit app can be run locally via CLI `streamlit run app.py` or deployed via [other methods](https://discuss.streamlit.io/t/streamlit-deployment-guide-wiki/5099).
