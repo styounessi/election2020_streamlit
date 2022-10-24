@@ -9,3 +9,6 @@ Exploring application creation with Streamlit and SQLite. The data is from FiveT
 - [Pandas](https://pypi.org/project/pandas/)
 - [Pillow](https://pypi.org/project/Pillow/)
 - [Plotly](https://pypi.org/project/plotly/)
+
+## How to Run
+Any Streamlit app can be run locally via CLI `streamlit run app.py` or deployed via [other methods](https://discuss.streamlit.io/t/streamlit-deployment-guide-wiki/5099)
