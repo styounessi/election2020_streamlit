@@ -13,7 +13,7 @@ def query_to_dataframe():
     query = pd.read_sql('SELECT * FROM state_averages ORDER BY state', cnxn)
     return query
 
-averages = query_to_dataframe().copy()
+averages = query_to_dataframe()
 averages['modeldate'] = pd.to_datetime(averages['modeldate'])
 
 st.title('2020 Presidential Election Polling Averages')
