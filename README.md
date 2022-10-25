@@ -1,7 +1,7 @@
 # Election 2020 Streamlit Dashboard
 ![App screenshot](https://i.imgur.com/sIh5zS8.png)
 
-Exploring application creation with Streamlit and SQLite. The data is from FiveThirtyEight's [repo](https://raw.githubusercontent.com/bconnor17/2020-Presidential-Election-Data/master/presidential_poll_averages_2020.csv). Using an embedded database like SQLite makes sense with Streamlit since the entire point is speed/simplicity and something can be spun up in minutes. At the same time, the local database file(s) can be regularly updated to support more data sets which power additional visualizations in a multi-page application without having to pre-process the data constantly.
+Exploring application creation with Streamlit and SQLite. The data is from FiveThirtyEight's [repo](https://raw.githubusercontent.com/bconnor17/2020-Presidential-Election-Data/master/presidential_poll_averages_2020.csv). Using an embedded database like SQLite makes sense with Streamlit since the entire point is speed/simplicity and something can be spun up in minutes. At the same time, the local database file(s) can be regularly updated to support more data sets which power additional visualizations in a multi-page application without having to gather the data from disparate sources constantly.
 
 ## Requirements
 - [Streamlit](https://pypi.org/project/streamlit/)
