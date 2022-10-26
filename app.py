@@ -1,20 +1,21 @@
+import sqlite3
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-import sqlite3
 from PIL import Image
 
 st.set_page_config(layout='wide')
 
 cnxn = sqlite3.connect('election_2020.db')
+query = 'SELECT * FROM state_averages ORDER BY state'
 
-@st.cache(allow_output_mutation=True)
-def query_to_dataframe():
-    query = pd.read_sql('SELECT * FROM state_averages ORDER BY state', cnxn)
-    return query
+@st.cache()
+def query_to_df():
+    polls = pd.read_sql(query, cnxn)
+    polls['modeldate'] = pd.to_datetime(polls['modeldate'])
+    return polls
 
-averages = query_to_dataframe()
-averages['modeldate'] = pd.to_datetime(averages['modeldate'])
+averages = query_to_df()
 
 st.title('2020 Presidential Election Polling Averages')
 
