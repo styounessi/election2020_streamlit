@@ -3,7 +3,7 @@ import sqlite3
 
 poll_avg = pd.read_csv('https://raw.githubusercontent.com/bconnor17/2020-Presidential-Election-Data/master/presidential_poll_averages_2020.csv')
 
-poll_avg.drop('cycle', axis=1, inplace=True)
+poll_avg = poll_avg.drop('cycle', axis=1, inplace=True)
 poll_avg = poll_avg[poll_avg['candidate_name'].str.contains('Convention Bounce for Joseph R. Biden Jr.') == False]
 poll_avg = poll_avg[poll_avg['candidate_name'].str.contains('Convention Bounce for Donald Trump') == False]
 
